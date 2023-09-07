@@ -1,0 +1,105 @@
+{% load static %}
+{% load admin_urls %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriDataAPI Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/landingpage.css' %}">
+    <script src="{% static 'js/landingpage.js' %}"></script>
+</head>
+<body>
+    <!-- Intro Section -->
+    <header>
+        <img src="{% static 'img/hero-bg.png' %}" alt="hero-bg">
+        <h1>Welcome to NutriDataAPI</h1>
+        <p> Your trusted partner on the path to a healthier lifestyle. Our mission is to empower health-conscious
+            individuals like you, as well as educational institutions and healthcare professionals, with the tools and data needed to make
+            informed, nutritious choices. With NutriData, you'll gain access to an extensive database of nutritional facts, curated healthy
+            recipes, and meal planning resources, all designed to help you meet your dietary goals. Whether you're a dedicated
+            health enthusiast, an educator shaping the next generation's understanding of nutrition, or a healthcare provider committed 
+            to supporting your clients, NutriData API is your invaluable resource. Together, we'll navigate the journey to better health, 
+            one mindful choice at a time. Welcome to a world where wellness and knowledge unite—welcome to NutriData API.</p>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#video">video_Tour</a></li>
+            </ul>
+        </nav>
+    
+            <a href="https://nandilov.github.io/api_documentation" class="btn">Documentations</a>
+    </header>
+
+
+    <!-- Feature Section -->
+    <section id="features">
+        <div class="feature">
+            <img src="{% static 'img/feature-1.jpg' %}" alt="feature-1">
+            <h2>Nutritional Info</h2>
+            <p>Get detailed nutritional information for each food or Recipe.</p>
+        </div>
+        <div class="feature">
+            <img src="{% static 'img/feature-2.jpg' %}" alt="feature-2">
+            <h2>User contributions</h2>
+            <p>Contribute your own food data to enhance the API's database</p>
+        </div>
+        <div class="feature">
+            <img src="{% static 'img/feature-3.jpg' %}" alt="feature-3">
+            <h2>Recipe Search</h2>
+            <p>Find your favorite recipes quickly and easily</p>
+        </div>
+        <div class="feature">
+            <img src="{% static 'img/feature-4.jpg' %}" alt="feature-4">
+            <h2>Meal Planner</h2>
+            <p>Plan your meals for the week with our interactive meal planner.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About NutriData</h2>
+
+        <p>NutriData API is a gateway to comprehensive nutritional information. We're passionate about food and health,
+            and we've created this API to help you access valuable data that can empower your applications and services. </p>
+
+        <p>My journey with the NutriData API began with a simple question: "What's in our food, and how does it impact our lives?"
+            As a health-conscious individuals. i often found myself meticulously examining nutrition labels and 
+            searching for ways to make informed dietary choices. NutriData was inspired by my love for healthy living, cooking and 
+            exploring new cuisines. We wanted to create a platform that
+            makes it easy for food enthusiasts to discover, share recipes and maintain a healthy lifestyle.</p>
+        <p>This curiosity led me to develop NutriData API, not just as a project requirement but as a solution to a real-world problem. 
+            I envisioned a tool that would make it easy for everyone to access accurate and up-to-date nutritional information about the 
+            food they consume.Through research and hardwork, i brought this vision to life. I hope this API will not only benefit
+            developers but also individuals looking to 
+            lead healthier lives by making informed food choices.</p>
+    
+        <h2>Meet the Developer</h2>
+        <img src="{% static 'img/nandila.jpg' %}" alt="Developer_" width="250" height="300">
+        <!-- Include the developer's image with appropriate size -->
+
+        <p>The NutriData API is proudly developed by Nandila Mulilalila. Nandila is a passionate software engineering student at Holberton University,
+        where this project serves as a Portfolio Project. This project reflects her dedication 
+        to combining technology and nutrition to improve people's lives.</p>
+        <p>For collaboration, Connect:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/nandila-mulilalila-184595214/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/NandiLov" target="_blank">GitHub</a></li>
+            <li><a href="https://twitter.com/Nandilov" target="_blank">Twitter</a></li>
+        </ul>
+        <a href="https://github.com/NandiLov/NutriDataAPI" class="btn">GitHub Repository</a>
+    </section>
+
+    <section id="video">
+        <h2>Video Tour</h2>
+        <p>Take a tour of NutriData by waching this video.</p>
+        <iframe src="https://player.vimeo.com/video/861935810" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <footer id="footer">
+        <p>&copy; 2023 NutriDataAPI. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
