@@ -126,7 +126,6 @@ STATIC_URL = '/static/'
 #STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'home/static'),
-    os.path.join(BASE_DIR, 'food/static'),
 ]
 
 # Specify the directory where collected static files will be stored.

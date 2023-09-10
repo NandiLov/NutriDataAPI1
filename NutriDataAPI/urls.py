@@ -16,17 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from NutriDataAPI import views
 from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('NutriDataAPI/', views.FoodList.as_view(), name='food-list'),
-    path('NutriDataAPI/<int:pk>/', views.FoodDetail.as_view(), name='food-detail'),
-    path('food/', views.FoodList.as_view(), name='food-list'),
-    path('food/<int:pk>/', views.FoodDetail.as_view(), name='food-detail'),
     path('', include('home.urls')),
     path('', include('food.urls')),
+
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

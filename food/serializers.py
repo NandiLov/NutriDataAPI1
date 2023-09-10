@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Food
+from food.models import Food
 
 
 #create serializers to convert model instances to json

@@ -1,8 +1,3 @@
-from django.shortcuts import render
-
-def index(request):
-    return render(request, 'food/templates/food/food.html')
-
 #from django.http import JsonResponse
 from django.shortcuts import render
 
@@ -17,8 +12,7 @@ from .serializers import FoodSerializer
 class FoodList(generics.ListCreateAPIView):
     queryset = Food.objects.all()
     serializer_class = FoodSerializer
-    #filter_backends = [DjangoFilterBackend]
-    #filterset_fields = ['name', 'calories']
+
 
 # retrieve, update or delete Food by id
 class FoodDetail(generics.RetrieveUpdateDestroyAPIView):
@@ -27,14 +21,3 @@ class FoodDetail(generics.RetrieveUpdateDestroyAPIView):
 
    
    
-   
-   
-   
-   
-   
-    #get all the drinks, serialize them and return json
-
-#def Food_list(request):
-   # Food = Food.objects.all()
-    #serializer = FoodSerializer(Food, many=True)
-   # return JsonResponse(serializer.data)
